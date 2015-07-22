@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/album_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/album_thumbnail" />
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/album_artist_name"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@+id/album_image"
+        android:layout_toRightOf="@+id/album_image"
+        android:text="Album Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/album_artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/album_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/album_name"
+        android:layout_marginTop="55dp"
+        android:text="Artist Name" />
+
+
+
+
+</RelativeLayout>
